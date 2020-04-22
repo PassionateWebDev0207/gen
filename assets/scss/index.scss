@@ -1,0 +1,29 @@
+@import './fonts.scss';
+
+body {
+  margin: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif !important;;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
