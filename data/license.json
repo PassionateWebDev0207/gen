@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "title": "Angular Certified",
+      "linkTo": "https://skillvalue.com/en/certificate/QN6BdlmVezip0oIwDo460AdV49CunXekE2VOsYXPVSeRkZnQjfq668YWUDKi",
+      "image": "http://jimmy-yu-cv.herokuapp.com/images/ng.jpg"
+    },
+    {
+      "title": "React Certified",
+      "linkTo": "https://skillvalue.com/en/certificate/RngH3I7jLOuUtHe2eYEARTqZPFav3rRjGHcW3QKsAATYxPOtXS2jjzoy90s0",
+      "image": "http://jimmy-yu-cv.herokuapp.com/images/react.jpg"
+    },
+    {
+      "title": "Vue Certified",
+      "linkTo": "https://skillvalue.com/en/certificate/lmgUzKhovGasoxBJKFhcwnCBVIDlwZPcQ1XpPk4fCTf2SUPsaWyK6kWIs52o",
+      "image": "http://jimmy-yu-cv.herokuapp.com/images/vue.jpg"
+    }
+  ]
+}

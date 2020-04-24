@@ -27,7 +27,7 @@ export default {}
   width: 100%;
   height: 250px;
   padding: 75px 0 105px 0;
-  background-image: url('~assets/images/hero-bg3.jpg');
+  background-image: url('~assets/images/bg-hero.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -21,20 +21,21 @@
     <skills />
     <!-- license and certifications -->
     <h2 class="title">licenses & certifications</h2>
-    <licenses />
+    <licenses :data="getLicenses" />
     <!-- portfolio -->
     <h2 class="title">portfolios</h2>
-    <portfolio />
+    <portfolio :data="getPortfolios" />
   </div>
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
 import Hero from '@/components/Hero'
 import Skills from '@/components/Skills'
 import Summary from '@/components/Summary'
 import Education from '@/components/Education'
-import Licenses from '@/components/Licences'
-import Portfolio from '@/components/Portfolio'
+import Licenses from '@/components/License/index'
+import Portfolio from '@/components/Portfolio/index'
 import WorkExperience from '@/components/WorkExperience'
 export default {
   components: {
@@ -45,6 +46,21 @@ export default {
     Licenses,
     Portfolio,
     WorkExperience
+  },
+  computed: {
+    ...mapGetters('modules/portfolio', [
+      'getPortfolios',
+      'getPortfolioLoadStatus'
+    ]),
+    ...mapGetters('modules/license', ['getLicenses', 'getLicenseLoadStatus'])
+  },
+  created() {
+    this.GET_PORTFOLIOS('jimmy yu')
+    this.GET_LICENSES('jimmy yu')
+  },
+  methods: {
+    ...mapActions('modules/portfolio', ['GET_PORTFOLIOS']),
+    ...mapActions('modules/license', ['GET_LICENSES'])
   }
 }
 </script>

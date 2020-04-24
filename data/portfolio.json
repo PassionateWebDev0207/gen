@@ -1,0 +1,29 @@
+{
+  "categories": ["Angular", "React", "Vue", "jQuery"],
+  "data": [
+    {
+      "category": "Angular",
+      "title": "Grab - Angular",
+      "linkTo": "https://www.grabapp.ca",
+      "image": "http://jimmy-yu-cv.herokuapp.com/images/portfolios/bg-grab.jpg"
+    },
+    {
+      "category": "React",
+      "title": "Bounce House - React / Ruby on Rails",
+      "linkTo": "https://www.bounce.house",
+      "image": "http://jimmy-yu-cv.herokuapp.com/images/portfolios/bg-bh.png"
+    },
+    {
+      "category": "Vue",
+      "title": "StrongBlock - Vue",
+      "linkTo": "https://strongblock.io",
+      "image": "http://jimmy-yu-cv.herokuapp.com/images/portfolios/bg-sb.png"
+    },
+    {
+      "category": "jQuery",
+      "title": "Hireo - jQuery",
+      "linkTo": "http://www.outfound.io",
+      "image": "http://jimmy-yu-cv.herokuapp.com/images/portfolios/jq1.png"
+    }
+  ]
+}
