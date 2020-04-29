@@ -1,60 +1,76 @@
 <template>
-  <div class="hero">
-    <h1>Jimmy(JiaXiang) Yu</h1>
-    <h2>Web Technologies Expert</h2>
-    <div class="user-image">
-      <el-image>
-        <div slot="error" class="image-slot">
-          <i class="el-icon-picture"></i>
+  <div class="container">
+    <div class="hero">
+      <el-image class="user-image" :src="userImage" :lazy="true" fit="cover">
+        <div slot="error" class="image-error">
+          <i class="el-icon-picture" />
+        </div>
+        <div slot="placeholer" class="image-loading">
+          <i class="el-icon-loading" />
         </div>
       </el-image>
+      <div class="user-info">
+        <h1>Jimmy Yu</h1>
+        <h2>Web Technologies Expert</h2>
+        <br />
+        <h3>Austin, Texas, United States</h3>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    userImage: {
+      type: String,
+      default: ''
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
 .hero {
-  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  position: relative;
-  width: 100%;
-  height: 250px;
-  padding: 75px 0 105px 0;
-  background-image: url('~assets/images/bg-hero.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #f5f5f5;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-  .el-image {
-    position: absolute;
-    left: calc((100% - 170px) / 2);
-    bottom: -85px;
+  .user-image {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 170px;
+    min-width: 170px;
     height: 170px;
+    min-height: 170px;
     border-radius: 50%;
     border: 5px solid white;
     background-color: grey;
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
-  h1,
-  h2 {
-    color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.29);
-    margin: 0;
+  .user-info {
+    margin-left: 20px;
+    h1,
+    h2,
+    h3 {
+      color: #606060;
+      text-shadow: 0 0 2px rgba(0, 0, 0, 0.29);
+      margin: 0;
+    }
+    h2,
+    h3 {
+      font-weight: 300;
+    }
+    @media (max-width: 767px) {
+      text-align: center;
+      margin-left: 0;
+    }
   }
-  h2 {
-    font-weight: 300;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    justify-content: center;
   }
 }
 </style>

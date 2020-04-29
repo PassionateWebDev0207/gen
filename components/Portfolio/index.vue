@@ -4,7 +4,7 @@
     element-loading-text="Loading..."
     element-loading-spinner="el-icon-loading"
     element-loading-background="rgba(0, 0, 0, 0.8)"
-    class="portfolios"
+    class="portfolios container"
   >
     <el-tabs v-if="data" type="card">
       <el-tab-pane
@@ -73,10 +73,6 @@ export default {
 
 <style lang="scss" scoped>
 .portfolios {
-  box-sizing: border-box;
-  margin: 20px;
-  margin-bottom: 0;
-  width: calc(100% - 40px);
   .el-tab-pane {
     .el-col {
       margin-bottom: 20px;

@@ -1,11 +1,12 @@
 <template>
-  <div />
+  <base-layout />
 </template>
 
 <script>
+import BaseLayout from '@/layouts/BaseLayout'
 export default {
-  created() {
-    this.$router.push('/profile')
+  components: {
+    BaseLayout
   }
 }
 </script>

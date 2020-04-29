@@ -1,5 +1,5 @@
 <template>
-  <div class="experience">
+  <div class="experience container">
     <el-timeline>
       <el-timeline-item>
         <el-card>
@@ -26,11 +26,8 @@ export default {}
 
 <style lang="scss" scoped>
 .experience {
-  box-sizing: border-box;
-  margin: 20px;
-  margin-bottom: 0;
-  width: calc(100% - 40px);
-  .el-timeline {
+  .el-timeline,
+  .el-timeline-item {
     padding: 0;
   }
 }

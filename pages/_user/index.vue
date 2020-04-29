@@ -4,18 +4,12 @@
     <hero />
     <!-- summary -->
     <Summary />
-    <el-row>
-      <el-col :sm="12" :xs="24">
-        <!-- Education -->
-        <h2 class="title">education</h2>
-        <education />
-      </el-col>
-      <el-col :sm="12" :xs="24">
-        <!-- Experience -->
-        <h2 class="title">experience</h2>
-        <work-experience />
-      </el-col>
-    </el-row>
+    <!-- Education -->
+    <h2 class="title">education</h2>
+    <education />
+    <!-- Experience -->
+    <h2 class="title">experience</h2>
+    <work-experience />
     <!-- Skills -->
     <h2 class="title">skills</h2>
     <skills />
@@ -31,12 +25,12 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 import Hero from '@/components/Hero'
-import Skills from '@/components/Skills'
+import Skills from '@/components/Skills/index'
 import Summary from '@/components/Summary'
-import Education from '@/components/Education'
+import Education from '@/components/Education/index'
 import Licenses from '@/components/License/index'
 import Portfolio from '@/components/Portfolio/index'
-import WorkExperience from '@/components/WorkExperience'
+import WorkExperience from '@/components/WorkExperience/index'
 export default {
   components: {
     Hero,
@@ -67,6 +61,8 @@ export default {
 
 <style lang="scss" scoped>
 .cv-container {
+  background-image: none;
+  background-color: white;
   h1,
   h2,
   h3,
